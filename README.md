@@ -10,6 +10,8 @@ NextJS blog app built by referring to [this figma design](https://www.figma.com/
 
 ## Features
 
+- Debounced search and tags input to limit http requests
+- Search as you type
 - Implemented fuzzy search for title, tags and description
 - Filter by tags
 - Optimized componets for server side caching for faster load time
