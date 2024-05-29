@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 768px) {
+  .blog-item {
+    position: relative;
+  }
+
+  .blog-item:hover::before {
+    opacity: 1;
+  }
+
+  .blog-item::before {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: radial-gradient(
+      200px circle at var(--mouse-x) var(--mouse-y),
+      theme(colors.brand.translucent.brand) 0%,
+      transparent 90%
+    );
+  }
+}
