@@ -9,7 +9,7 @@ export default function Search() {
     async (e: React.ChangeEvent<HTMLInputElement>) => {
       await filterBlogs(e.target.value as string, []);
     },
-    400
+    300
   );
 
   return (
